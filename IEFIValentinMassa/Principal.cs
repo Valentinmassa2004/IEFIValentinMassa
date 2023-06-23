@@ -16,5 +16,17 @@ namespace IEFIValentinMassa
         {
             InitializeComponent();
         }
+
+        private void btnProductos_Click(object sender, EventArgs e)
+        {
+            frmProductos frmProductos = new frmProductos();
+            frmProductos.ShowDialog();
+        }
+
+        private void btnVentas_Click(object sender, EventArgs e)
+        {
+            frmVentas frmVentas = new frmVentas();
+            frmVentas.ShowDialog();
+        }
     }
 }
