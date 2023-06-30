@@ -10,9 +10,10 @@ using System.Windows.Forms;
 
 namespace IEFIValentinMassa
 {
-    public partial class Principal : Form
+    public partial class frmPrincipal : Form
     {
-        public Principal()
+       public Listados listados = new Listados();
+        public frmPrincipal()
         {
             InitializeComponent();
         }
@@ -27,6 +28,11 @@ namespace IEFIValentinMassa
         {
             frmVentas frmVentas = new frmVentas();
             frmVentas.ShowDialog();
+        }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
