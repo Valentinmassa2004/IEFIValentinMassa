@@ -12,9 +12,8 @@ namespace IEFIValentinMassa
 {
     public partial class frmProductos : Form
     {
-        frmPrincipal objetoMain = new frmPrincipal();
-        int indiceFila = 0;
-
+        frmListados Listado = new frmListados();
+        int indicefila = 0;
         public frmProductos()
         {
             InitializeComponent();
@@ -37,11 +36,11 @@ namespace IEFIValentinMassa
                 dtgvRegistro.Rows[n].Cells[1].Value = txtNombredelProducto.Text;
                 dtgvRegistro.Rows[n].Cells[2].Value = dtpFechaRegistro.Text;
                  
-                objetoMain.listados.matrizProducto[indiceFila, 0] = txtID.Text;
-                objetoMain.listados.matrizProducto[indiceFila, 1] = txtNombredelProducto.Text;
-                objetoMain.listados.matrizProducto[indiceFila, 2] = dtpFechaRegistro.Text;
+                Listado.matrizProducto[indicefila, 0] = txtID.Text;
+                Listado.matrizProducto[indicefila, 1] = txtNombredelProducto.Text;
+                Listado.matrizProducto[indicefila, 2] = dtpFechaRegistro.Text;
 
-                indiceFila++;
+                indicefila++;
 
             }
             else
@@ -56,7 +55,7 @@ namespace IEFIValentinMassa
 
         private void btnListado_Click(object sender, EventArgs e)
         {
-            objetoMain.listados = new List<object>();
+            Listado.ShowDialog();
         }
     }
 }

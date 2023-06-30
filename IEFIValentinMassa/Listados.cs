@@ -16,7 +16,7 @@ namespace IEFIValentinMassa
         public string[,] matrizProducto = new string[10, 3];
         public string[,] matrizRegistro = new string[10, 4];
 
-        public frmListados(string v, string[,] matrizVentas)
+        public frmListados()
         {
             InitializeComponent();
         }

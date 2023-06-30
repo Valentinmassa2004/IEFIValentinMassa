@@ -323,7 +323,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmVentas";
             this.Text = "Cargar ventas";
-            this.Load += new System.EventHandler(this.frmVentas_Load);
+
             this.tabVentas.ResumeLayout(false);
             this.tabRegistro.ResumeLayout(false);
             this.tabRegistro.PerformLayout();

@@ -1,5 +1,5 @@
 ﻿using System;
-namespace IEFIValentinMassa 
+namespace IEFIValentinMassa {  
     partial class frmProductos
     {
         /// <summary>

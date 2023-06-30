@@ -36,59 +36,59 @@ namespace IEFIValentinMassa
             matrizVentas[indiceFila, 1] = producto;
             matrizVentas[indiceFila, 2] = fecha;
             matrizVentas[indiceFila, 3] = cantidad;
-           
+
             MessageBox.Show(matrizVentas[indiceFila, 1] + " agregado correctamente.");
             indiceFila = indiceFila + 1;
 
         }
 
-    private void brnConsultar_Click(object sender, EventArgs e)
-    {
-        dtgvRegistro.Rows.Clear();
-        for (int i = 0; i < matrizVentas.GetLength(0); i++)
+        private void brnConsultar_Click(object sender, EventArgs e)
         {
-            if (matrizVentas[i, 0] != null)
+            dtgvRegistro.Rows.Clear();
+            for (int i = 0; i < matrizVentas.GetLength(0); i++)
             {
-                dtgvRegistro.Rows.Add(matrizVentas[i, 0], matrizVentas[i, 1], matrizVentas[i, 2], matrizVentas[i, 3]);
-
-            }
-        }
-    }
-
-    private void btnConsultar_Click(object sender, EventArgs e)
-    {
-        frmListados listados = new frmListados("Ventas", matrizVentas);
-            listados.ShowDialog();
-        }
-
-    private void btnComenzar_Click(object sender, EventArgs e)
-    {
-        dtgvRegistro.Rows.Clear();
-        string producto;
-        producto = txtFiltro.Text;
-        if (rdbCantidad.Checked)
-        {
-            for (int f = 0; f < matrizVentas.GetLength(0); f++)
-            {
-                if (matrizVentas[f, 3] != null && int.Parse(matrizVentas[f, 3]) > 10)
+                if (matrizVentas[i, 0] != null)
                 {
-                    dtgvRegistro.Rows.Add(matrizVentas[f, 0], matrizVentas[f, 1], matrizVentas[f, 2], matrizVentas[f, 3]);
-                }
-            }
-        }
-        else if (rdbProductos.Checked)
-        {
-            for (int f = 0; f < matrizVentas.GetLength(0); f++)
-            {
-                if (matrizVentas[f, 1] != null && matrizVentas[f, 1] == producto)
-                {
-                    MessageBox.Show(producto + "=" + matrizVentas[f, 1]);
-                    dtgvRegistro.Rows.Add(matrizVentas[f, 0], matrizVentas[f, 1], matrizVentas[f, 2], matrizVentas[f, 3]);
+                    dtgvRegistro.Rows.Add(matrizVentas[i, 0], matrizVentas[i, 1], matrizVentas[i, 2], matrizVentas[i, 3]);
+
                 }
             }
         }
 
-    }
+        private void btnConsultar_Click(object sender, EventArgs e)
+        {
+            
+        }
 
+        private void btnComenzar_Click(object sender, EventArgs e)
+        {
+            dtgvRegistro.Rows.Clear();
+            string producto;
+            producto = txtFiltro.Text;
+            if (rdbCantidad.Checked)
+            {
+                for (int f = 0; f < matrizVentas.GetLength(0); f++)
+                {
+                    if (matrizVentas[f, 3] != null && int.Parse(matrizVentas[f, 3]) > 10)
+                    {
+                        dtgvRegistro.Rows.Add(matrizVentas[f, 0], matrizVentas[f, 1], matrizVentas[f, 2], matrizVentas[f, 3]);
+                    }
+                }
+            }
+            else if (rdbProductos.Checked)
+            {
+                for (int f = 0; f < matrizVentas.GetLength(0); f++)
+                {
+                    if (matrizVentas[f, 1] != null && matrizVentas[f, 1] == producto)
+                    {
+                        MessageBox.Show(producto + "=" + matrizVentas[f, 1]);
+                        dtgvRegistro.Rows.Add(matrizVentas[f, 0], matrizVentas[f, 1], matrizVentas[f, 2], matrizVentas[f, 3]);
+                    }
+                }
+            }
+
+        }
+
+    }
 }
 
