@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace IEFIValentinMassa
 
+{
     public partial class frmVentas : Form
     {
         frmPrincipal objetoMain = new frmPrincipal();

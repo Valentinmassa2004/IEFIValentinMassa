@@ -1,7 +1,5 @@
 ﻿using System;
-
-namespace IEFIValentinMassa
-{
+namespace IEFIValentinMassa 
     partial class frmProductos
     {
         /// <summary>
@@ -178,7 +176,6 @@ namespace IEFIValentinMassa
             this.dtgvRegistro.RowHeadersWidth = 51;
             this.dtgvRegistro.Size = new System.Drawing.Size(560, 133);
             this.dtgvRegistro.TabIndex = 1;
-            this.dtgvRegistro.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvRegistro_CellContentClick);
             // 
             // ID
             // 
@@ -248,6 +245,8 @@ namespace IEFIValentinMassa
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha_de_Registro;
         private System.Windows.Forms.Button btnVolver;
-    }
+        }
 }
-    
+
+
+#endregion

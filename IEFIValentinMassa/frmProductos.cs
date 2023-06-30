@@ -56,12 +56,7 @@ namespace IEFIValentinMassa
 
         private void btnListado_Click(object sender, EventArgs e)
         {
-            objetoMain.listados.Show();
-        }
-
-        private void dtgvRegistro_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+            objetoMain.listados = new List<object>();
         }
     }
 }

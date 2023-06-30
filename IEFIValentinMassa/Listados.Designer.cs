@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.mrcFiltro = new System.Windows.Forms.GroupBox();
-            this.rdbProductos = new System.Windows.Forms.RadioButton();
-            this.rdbVentas = new System.Windows.Forms.RadioButton();
-            this.LstVentas = new System.Windows.Forms.ComboBox();
             this.btnFiltrar = new System.Windows.Forms.Button();
+            this.lstVentas = new System.Windows.Forms.ComboBox();
+            this.rdbVentas = new System.Windows.Forms.RadioButton();
+            this.rdbProductos = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
             this.dtgvRegistro = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,7 +45,7 @@
             // mrcFiltro
             // 
             this.mrcFiltro.Controls.Add(this.btnFiltrar);
-            this.mrcFiltro.Controls.Add(this.LstVentas);
+            this.mrcFiltro.Controls.Add(this.lstVentas);
             this.mrcFiltro.Controls.Add(this.rdbVentas);
             this.mrcFiltro.Controls.Add(this.rdbProductos);
             this.mrcFiltro.Location = new System.Drawing.Point(12, 12);
@@ -54,6 +54,38 @@
             this.mrcFiltro.TabIndex = 0;
             this.mrcFiltro.TabStop = false;
             this.mrcFiltro.Text = "Filtro";
+            // 
+            // btnFiltrar
+            // 
+            this.btnFiltrar.BackColor = System.Drawing.Color.Teal;
+            this.btnFiltrar.Font = new System.Drawing.Font("Pristina", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFiltrar.Location = new System.Drawing.Point(509, 29);
+            this.btnFiltrar.Name = "btnFiltrar";
+            this.btnFiltrar.Size = new System.Drawing.Size(123, 40);
+            this.btnFiltrar.TabIndex = 3;
+            this.btnFiltrar.Text = "Filtrar";
+            this.btnFiltrar.UseVisualStyleBackColor = false;
+            this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
+            // 
+            // lstVentas
+            // 
+            this.lstVentas.FormattingEnabled = true;
+            this.lstVentas.Location = new System.Drawing.Point(285, 42);
+            this.lstVentas.Name = "lstVentas";
+            this.lstVentas.Size = new System.Drawing.Size(121, 24);
+            this.lstVentas.TabIndex = 2;
+            // 
+            // rdbVentas
+            // 
+            this.rdbVentas.AutoSize = true;
+            this.rdbVentas.Location = new System.Drawing.Point(209, 46);
+            this.rdbVentas.Name = "rdbVentas";
+            this.rdbVentas.Size = new System.Drawing.Size(70, 20);
+            this.rdbVentas.TabIndex = 1;
+            this.rdbVentas.TabStop = true;
+            this.rdbVentas.Text = "Ventas";
+            this.rdbVentas.UseVisualStyleBackColor = true;
+            this.rdbVentas.CheckedChanged += new System.EventHandler(this.rdbVentas_CheckedChanged);
             // 
             // rdbProductos
             // 
@@ -66,36 +98,6 @@
             this.rdbProductos.Text = "Productos";
             this.rdbProductos.UseVisualStyleBackColor = true;
             // 
-            // rdbVentas
-            // 
-            this.rdbVentas.AutoSize = true;
-            this.rdbVentas.Location = new System.Drawing.Point(209, 46);
-            this.rdbVentas.Name = "rdbVentas";
-            this.rdbVentas.Size = new System.Drawing.Size(70, 20);
-            this.rdbVentas.TabIndex = 1;
-            this.rdbVentas.TabStop = true;
-            this.rdbVentas.Text = "Ventas";
-            this.rdbVentas.UseVisualStyleBackColor = true;
-            // 
-            // LstVentas
-            // 
-            this.LstVentas.FormattingEnabled = true;
-            this.LstVentas.Location = new System.Drawing.Point(285, 42);
-            this.LstVentas.Name = "LstVentas";
-            this.LstVentas.Size = new System.Drawing.Size(121, 24);
-            this.LstVentas.TabIndex = 2;
-            // 
-            // btnFiltrar
-            // 
-            this.btnFiltrar.BackColor = System.Drawing.Color.Teal;
-            this.btnFiltrar.Font = new System.Drawing.Font("Pristina", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFiltrar.Location = new System.Drawing.Point(509, 29);
-            this.btnFiltrar.Name = "btnFiltrar";
-            this.btnFiltrar.Size = new System.Drawing.Size(123, 40);
-            this.btnFiltrar.TabIndex = 3;
-            this.btnFiltrar.Text = "Filtrar";
-            this.btnFiltrar.UseVisualStyleBackColor = false;
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Teal;
@@ -106,6 +108,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Listar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dtgvRegistro
             // 
@@ -163,7 +166,6 @@
             this.Controls.Add(this.mrcFiltro);
             this.Name = "frmListados";
             this.Text = "Listados";
-            this.Load += new System.EventHandler(this.Listados_Load);
             this.mrcFiltro.ResumeLayout(false);
             this.mrcFiltro.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvRegistro)).EndInit();
@@ -175,7 +177,7 @@
 
         private System.Windows.Forms.GroupBox mrcFiltro;
         private System.Windows.Forms.Button btnFiltrar;
-        private System.Windows.Forms.ComboBox LstVentas;
+        private System.Windows.Forms.ComboBox lstVentas;
         private System.Windows.Forms.RadioButton rdbVentas;
         private System.Windows.Forms.RadioButton rdbProductos;
         private System.Windows.Forms.Button button1;
