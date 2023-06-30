@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace IEFIValentinMassa
 {
-    public partial class Listados : Form
+    public partial class frmListados : Form
     {
 
         public string[,] matrizProducto = new string[10, 3];
         public string[,] matrizRegistro = new string[10, 4];
 
-        public Listados()
+        public frmListados(string v)
         {
             InitializeComponent();
         }

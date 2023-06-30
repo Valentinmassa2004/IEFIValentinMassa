@@ -12,7 +12,8 @@ namespace IEFIValentinMassa
 {
     public partial class frmPrincipal : Form
     {
-       public Listados listados = new Listados();
+        internal object listados;
+
         public frmPrincipal()
         {
             InitializeComponent();

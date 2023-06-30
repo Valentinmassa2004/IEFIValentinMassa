@@ -58,6 +58,12 @@ namespace IEFIValentinMassa
         {
             objetoMain.listados.Show();
         }
+
+        private void dtgvRegistro_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
+}
 
 

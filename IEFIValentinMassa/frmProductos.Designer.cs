@@ -58,7 +58,6 @@ namespace IEFIValentinMassa
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(261, 22);
             this.txtID.TabIndex = 0;
-            this.txtID.TextChanged += new System.EventHandler(this.txtID_TextChanged);
             // 
             // mrcCargadeproductos
             // 
@@ -179,6 +178,7 @@ namespace IEFIValentinMassa
             this.dtgvRegistro.RowHeadersWidth = 51;
             this.dtgvRegistro.Size = new System.Drawing.Size(560, 133);
             this.dtgvRegistro.TabIndex = 1;
+            this.dtgvRegistro.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvRegistro_CellContentClick);
             // 
             // ID
             // 
@@ -227,15 +227,10 @@ namespace IEFIValentinMassa
             this.mrcListadoProductos.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvRegistro)).EndInit();
             this.ResumeLayout(false);
-
         }
 
-        private void txtID_TextChanged(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
 
-        #endregion
+
 
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.GroupBox mrcCargadeproductos;
@@ -255,3 +250,4 @@ namespace IEFIValentinMassa
         private System.Windows.Forms.Button btnVolver;
     }
 }
+    

@@ -1,6 +1,6 @@
 ﻿namespace IEFIValentinMassa
 {
-    partial class Listados
+    partial class frmListados
     {
         /// <summary>
         /// Required designer variable.
@@ -152,7 +152,7 @@
             this.Fecha_de_Registro.MinimumWidth = 6;
             this.Fecha_de_Registro.Name = "Fecha_de_Registro";
             // 
-            // Listados
+            // frmListados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -161,7 +161,7 @@
             this.Controls.Add(this.dtgvRegistro);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.mrcFiltro);
-            this.Name = "Listados";
+            this.Name = "frmListados";
             this.Text = "Listados";
             this.Load += new System.EventHandler(this.Listados_Load);
             this.mrcFiltro.ResumeLayout(false);
