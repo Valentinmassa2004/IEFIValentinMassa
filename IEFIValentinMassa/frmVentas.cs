@@ -25,6 +25,7 @@ namespace IEFIValentinMassa
 
         private void btnCargar_Click(object sender, EventArgs e)
         {
+            // declaración de variables
             string id, producto, fecha, cantidad;
             id = txtID.Text.ToString();
             producto = txtProducto.Text.ToString();
