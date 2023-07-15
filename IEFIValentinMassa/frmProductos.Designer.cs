@@ -52,9 +52,10 @@ namespace IEFIValentinMassa {
             // txtID
             // 
             this.txtID.BackColor = System.Drawing.SystemColors.Window;
-            this.txtID.Location = new System.Drawing.Point(20, 48);
+            this.txtID.Location = new System.Drawing.Point(15, 39);
+            this.txtID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(261, 22);
+            this.txtID.Size = new System.Drawing.Size(197, 20);
             this.txtID.TabIndex = 0;
             // 
             // mrcCargadeproductos
@@ -66,9 +67,11 @@ namespace IEFIValentinMassa {
             this.mrcCargadeproductos.Controls.Add(this.lblNombredelProducto);
             this.mrcCargadeproductos.Controls.Add(this.lblID);
             this.mrcCargadeproductos.Controls.Add(this.txtID);
-            this.mrcCargadeproductos.Location = new System.Drawing.Point(24, 30);
+            this.mrcCargadeproductos.Location = new System.Drawing.Point(18, 24);
+            this.mrcCargadeproductos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.mrcCargadeproductos.Name = "mrcCargadeproductos";
-            this.mrcCargadeproductos.Size = new System.Drawing.Size(592, 209);
+            this.mrcCargadeproductos.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mrcCargadeproductos.Size = new System.Drawing.Size(444, 170);
             this.mrcCargadeproductos.TabIndex = 1;
             this.mrcCargadeproductos.TabStop = false;
             this.mrcCargadeproductos.Text = "Carga de productos";
@@ -77,9 +80,10 @@ namespace IEFIValentinMassa {
             // 
             this.btnCargar.BackColor = System.Drawing.Color.Teal;
             this.btnCargar.Font = new System.Drawing.Font("Pristina", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCargar.Location = new System.Drawing.Point(449, 88);
+            this.btnCargar.Location = new System.Drawing.Point(337, 72);
+            this.btnCargar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCargar.Name = "btnCargar";
-            this.btnCargar.Size = new System.Drawing.Size(90, 54);
+            this.btnCargar.Size = new System.Drawing.Size(68, 44);
             this.btnCargar.TabIndex = 6;
             this.btnCargar.Text = "Cargar";
             this.btnCargar.UseVisualStyleBackColor = false;
@@ -87,42 +91,47 @@ namespace IEFIValentinMassa {
             // 
             // dtpFechaRegistro
             // 
-            this.dtpFechaRegistro.Location = new System.Drawing.Point(20, 168);
+            this.dtpFechaRegistro.Location = new System.Drawing.Point(15, 136);
+            this.dtpFechaRegistro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtpFechaRegistro.Name = "dtpFechaRegistro";
-            this.dtpFechaRegistro.Size = new System.Drawing.Size(261, 22);
+            this.dtpFechaRegistro.Size = new System.Drawing.Size(197, 20);
             this.dtpFechaRegistro.TabIndex = 5;
             // 
             // lblFechaRegisro
             // 
             this.lblFechaRegisro.AutoSize = true;
-            this.lblFechaRegisro.Location = new System.Drawing.Point(17, 149);
+            this.lblFechaRegisro.Location = new System.Drawing.Point(13, 121);
+            this.lblFechaRegisro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFechaRegisro.Name = "lblFechaRegisro";
-            this.lblFechaRegisro.Size = new System.Drawing.Size(99, 16);
+            this.lblFechaRegisro.Size = new System.Drawing.Size(79, 13);
             this.lblFechaRegisro.TabIndex = 4;
             this.lblFechaRegisro.Text = "Fecha Registro";
             // 
             // txtNombredelProducto
             // 
-            this.txtNombredelProducto.Location = new System.Drawing.Point(20, 108);
+            this.txtNombredelProducto.Location = new System.Drawing.Point(15, 88);
+            this.txtNombredelProducto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombredelProducto.Name = "txtNombredelProducto";
-            this.txtNombredelProducto.Size = new System.Drawing.Size(261, 22);
+            this.txtNombredelProducto.Size = new System.Drawing.Size(197, 20);
             this.txtNombredelProducto.TabIndex = 3;
             // 
             // lblNombredelProducto
             // 
             this.lblNombredelProducto.AutoSize = true;
-            this.lblNombredelProducto.Location = new System.Drawing.Point(17, 88);
+            this.lblNombredelProducto.Location = new System.Drawing.Point(13, 72);
+            this.lblNombredelProducto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombredelProducto.Name = "lblNombredelProducto";
-            this.lblNombredelProducto.Size = new System.Drawing.Size(135, 16);
+            this.lblNombredelProducto.Size = new System.Drawing.Size(107, 13);
             this.lblNombredelProducto.TabIndex = 2;
             this.lblNombredelProducto.Text = "Nombre del Producto";
             // 
             // lblID
             // 
             this.lblID.AutoSize = true;
-            this.lblID.Location = new System.Drawing.Point(17, 29);
+            this.lblID.Location = new System.Drawing.Point(13, 24);
+            this.lblID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(20, 16);
+            this.lblID.Size = new System.Drawing.Size(18, 13);
             this.lblID.TabIndex = 1;
             this.lblID.Text = "ID";
             // 
@@ -130,9 +139,11 @@ namespace IEFIValentinMassa {
             // 
             this.mrcListadoProductos.Controls.Add(this.btnListado);
             this.mrcListadoProductos.Controls.Add(this.dtgvRegistro);
-            this.mrcListadoProductos.Location = new System.Drawing.Point(24, 280);
+            this.mrcListadoProductos.Location = new System.Drawing.Point(18, 228);
+            this.mrcListadoProductos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.mrcListadoProductos.Name = "mrcListadoProductos";
-            this.mrcListadoProductos.Size = new System.Drawing.Size(908, 194);
+            this.mrcListadoProductos.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mrcListadoProductos.Size = new System.Drawing.Size(681, 158);
             this.mrcListadoProductos.TabIndex = 2;
             this.mrcListadoProductos.TabStop = false;
             this.mrcListadoProductos.Text = "Listado de Productos";
@@ -142,9 +153,10 @@ namespace IEFIValentinMassa {
             this.btnListado.BackColor = System.Drawing.Color.Teal;
             this.btnListado.Font = new System.Drawing.Font("Pristina", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnListado.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.btnListado.Location = new System.Drawing.Point(742, 124);
+            this.btnListado.Location = new System.Drawing.Point(556, 101);
+            this.btnListado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnListado.Name = "btnListado";
-            this.btnListado.Size = new System.Drawing.Size(145, 58);
+            this.btnListado.Size = new System.Drawing.Size(109, 47);
             this.btnListado.TabIndex = 2;
             this.btnListado.Text = "Listado";
             this.btnListado.UseVisualStyleBackColor = false;
@@ -168,13 +180,12 @@ namespace IEFIValentinMassa {
             this.dtgvRegistro.Enabled = false;
             this.dtgvRegistro.EnableHeadersVisualStyles = false;
             this.dtgvRegistro.GridColor = System.Drawing.Color.Black;
-            this.dtgvRegistro.Location = new System.Drawing.Point(20, 31);
-            this.dtgvRegistro.Margin = new System.Windows.Forms.Padding(4);
+            this.dtgvRegistro.Location = new System.Drawing.Point(15, 25);
             this.dtgvRegistro.MultiSelect = false;
             this.dtgvRegistro.Name = "dtgvRegistro";
             this.dtgvRegistro.RowHeadersVisible = false;
             this.dtgvRegistro.RowHeadersWidth = 51;
-            this.dtgvRegistro.Size = new System.Drawing.Size(560, 133);
+            this.dtgvRegistro.Size = new System.Drawing.Size(420, 108);
             this.dtgvRegistro.TabIndex = 1;
             // 
             // ID
@@ -199,9 +210,10 @@ namespace IEFIValentinMassa {
             // 
             this.btnVolver.BackColor = System.Drawing.Color.Teal;
             this.btnVolver.Font = new System.Drawing.Font("Pristina", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.Location = new System.Drawing.Point(381, 510);
+            this.btnVolver.Location = new System.Drawing.Point(286, 414);
+            this.btnVolver.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(121, 58);
+            this.btnVolver.Size = new System.Drawing.Size(91, 47);
             this.btnVolver.TabIndex = 3;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = false;
@@ -209,21 +221,22 @@ namespace IEFIValentinMassa {
             // 
             // frmProductos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
-            this.ClientSize = new System.Drawing.Size(1067, 580);
+            this.ClientSize = new System.Drawing.Size(800, 471);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.mrcListadoProductos);
             this.Controls.Add(this.mrcCargadeproductos);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmProductos";
             this.Text = "Cargar Productos";
+            this.Load += new System.EventHandler(this.frmProductos_Load);
             this.mrcCargadeproductos.ResumeLayout(false);
             this.mrcCargadeproductos.PerformLayout();
             this.mrcListadoProductos.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvRegistro)).EndInit();
             this.ResumeLayout(false);
+
         }
 
 

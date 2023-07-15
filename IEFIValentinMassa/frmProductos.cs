@@ -57,6 +57,11 @@ namespace IEFIValentinMassa
         {
             Listado.ShowDialog();
         }
+
+        private void frmProductos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

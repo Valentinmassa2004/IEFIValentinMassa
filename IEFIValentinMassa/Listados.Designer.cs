@@ -48,9 +48,11 @@
             this.mrcFiltro.Controls.Add(this.lstVentas);
             this.mrcFiltro.Controls.Add(this.rdbVentas);
             this.mrcFiltro.Controls.Add(this.rdbProductos);
-            this.mrcFiltro.Location = new System.Drawing.Point(12, 12);
+            this.mrcFiltro.Location = new System.Drawing.Point(9, 10);
+            this.mrcFiltro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.mrcFiltro.Name = "mrcFiltro";
-            this.mrcFiltro.Size = new System.Drawing.Size(656, 100);
+            this.mrcFiltro.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mrcFiltro.Size = new System.Drawing.Size(492, 81);
             this.mrcFiltro.TabIndex = 0;
             this.mrcFiltro.TabStop = false;
             this.mrcFiltro.Text = "Filtro";
@@ -59,9 +61,10 @@
             // 
             this.btnFiltrar.BackColor = System.Drawing.Color.Teal;
             this.btnFiltrar.Font = new System.Drawing.Font("Pristina", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFiltrar.Location = new System.Drawing.Point(509, 29);
+            this.btnFiltrar.Location = new System.Drawing.Point(382, 24);
+            this.btnFiltrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnFiltrar.Name = "btnFiltrar";
-            this.btnFiltrar.Size = new System.Drawing.Size(123, 40);
+            this.btnFiltrar.Size = new System.Drawing.Size(92, 32);
             this.btnFiltrar.TabIndex = 3;
             this.btnFiltrar.Text = "Filtrar";
             this.btnFiltrar.UseVisualStyleBackColor = false;
@@ -70,17 +73,19 @@
             // lstVentas
             // 
             this.lstVentas.FormattingEnabled = true;
-            this.lstVentas.Location = new System.Drawing.Point(285, 42);
+            this.lstVentas.Location = new System.Drawing.Point(214, 34);
+            this.lstVentas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lstVentas.Name = "lstVentas";
-            this.lstVentas.Size = new System.Drawing.Size(121, 24);
+            this.lstVentas.Size = new System.Drawing.Size(92, 21);
             this.lstVentas.TabIndex = 2;
             // 
             // rdbVentas
             // 
             this.rdbVentas.AutoSize = true;
-            this.rdbVentas.Location = new System.Drawing.Point(209, 46);
+            this.rdbVentas.Location = new System.Drawing.Point(157, 37);
+            this.rdbVentas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdbVentas.Name = "rdbVentas";
-            this.rdbVentas.Size = new System.Drawing.Size(70, 20);
+            this.rdbVentas.Size = new System.Drawing.Size(58, 17);
             this.rdbVentas.TabIndex = 1;
             this.rdbVentas.TabStop = true;
             this.rdbVentas.Text = "Ventas";
@@ -90,9 +95,10 @@
             // rdbProductos
             // 
             this.rdbProductos.AutoSize = true;
-            this.rdbProductos.Location = new System.Drawing.Point(67, 46);
+            this.rdbProductos.Location = new System.Drawing.Point(50, 37);
+            this.rdbProductos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdbProductos.Name = "rdbProductos";
-            this.rdbProductos.Size = new System.Drawing.Size(89, 20);
+            this.rdbProductos.Size = new System.Drawing.Size(73, 17);
             this.rdbProductos.TabIndex = 0;
             this.rdbProductos.TabStop = true;
             this.rdbProductos.Text = "Productos";
@@ -102,9 +108,10 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Teal;
             this.button1.Font = new System.Drawing.Font("Pristina", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(56, 118);
+            this.button1.Location = new System.Drawing.Point(42, 96);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 38);
+            this.button1.Size = new System.Drawing.Size(69, 31);
             this.button1.TabIndex = 2;
             this.button1.Text = "Listar";
             this.button1.UseVisualStyleBackColor = false;
@@ -128,13 +135,12 @@
             this.dtgvRegistro.Enabled = false;
             this.dtgvRegistro.EnableHeadersVisualStyles = false;
             this.dtgvRegistro.GridColor = System.Drawing.Color.Black;
-            this.dtgvRegistro.Location = new System.Drawing.Point(12, 173);
-            this.dtgvRegistro.Margin = new System.Windows.Forms.Padding(4);
+            this.dtgvRegistro.Location = new System.Drawing.Point(9, 141);
             this.dtgvRegistro.MultiSelect = false;
             this.dtgvRegistro.Name = "dtgvRegistro";
             this.dtgvRegistro.RowHeadersVisible = false;
             this.dtgvRegistro.RowHeadersWidth = 51;
-            this.dtgvRegistro.Size = new System.Drawing.Size(656, 211);
+            this.dtgvRegistro.Size = new System.Drawing.Size(492, 171);
             this.dtgvRegistro.TabIndex = 3;
             // 
             // ID
@@ -157,15 +163,17 @@
             // 
             // frmListados
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
-            this.ClientSize = new System.Drawing.Size(693, 411);
+            this.ClientSize = new System.Drawing.Size(520, 334);
             this.Controls.Add(this.dtgvRegistro);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.mrcFiltro);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmListados";
             this.Text = "Listados";
+            this.Load += new System.EventHandler(this.frmListados_Load_1);
             this.mrcFiltro.ResumeLayout(false);
             this.mrcFiltro.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvRegistro)).EndInit();
