@@ -23,12 +23,13 @@ namespace IEFIValentinMassa
 
         private void frmListados_Load(object sender, EventArgs e)
         {
+            // recorre matriz
             for (int i = 0; i < 10; i++)
-            {
+            {   //
                 if (matrizRegistro[i, 1] != null)
-                {
+                {   //analiza si el elemento ya existe
                     if (lstVentas.Items.Contains(matrizRegistro[i, 1]) == false)
-                    {
+                    { // si no existe se agrega
                         lstVentas.Items.Add(matrizRegistro[i, 1]);
                     }
                 }
@@ -36,11 +37,11 @@ namespace IEFIValentinMassa
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
+        {       // recorre matriz
             for (int i = 0; i < matrizProducto.GetLength(0); i++)
-            {
+            {      //
                 if (matrizProducto[i, 1] != null)
-                {
+                { // agrega a las filas
                     dtgvRegistro.Rows.Add(matrizProducto[i, 0], matrizProducto[i, 1], matrizProducto[i, 2]);
                 }
             }
@@ -49,7 +50,7 @@ namespace IEFIValentinMassa
         private void btnFiltrar_Click(object sender, EventArgs e)
         {
             if (rdbProductos.Checked == true)
-            {
+            {       
                 for (int i = 0; i < matrizProducto.GetLength(0); i++)
                 {
                     if (matrizProducto[i, 1] != null)
